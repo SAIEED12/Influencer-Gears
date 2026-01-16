@@ -8,7 +8,12 @@ nav{
     justify-content: space-around;
     margin-bottom: 50px;
 }
-
+.threedot{
+    display: none;
+}
+.cart{
+    display: none;
+}
 ul{
     display: flex;
     list-style: none;
@@ -101,3 +106,70 @@ ul li:hover{
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
     margin-bottom: 100px;
 }
+
+/* responsive */
+@media (max-width: 576px) {
+
+    .hero-container{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+
+    .hero-image{
+        flex-direction: column;
+        margin: 0 auto;
+
+        max-width: 257px;
+    }
+    .hero-contents{
+        max-width: 404px;
+    }
+
+    .threedot{
+        display: flex;
+    }
+    .cart{
+        display: flex;
+    }
+    .image2{
+        position: relative;
+        padding: 5px;
+        margin-top: -250px;
+    }
+
+    .hero-btn{
+        display: flex;
+        margin: 0 auto;
+
+    }
+    .hero-contents h1{
+        font-size: 1.75rem;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .hero-contents p{
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links{
+        display: none;
+    }
+
+.sponsors {
+        display: flex;
+        flex-wrap: wrap;         
+        gap: 30px 40px;          
+        padding: 40px 20px;
+        border: none;
+        box-shadow: none;
+        margin-bottom: 50px;
+    }
+
+    .sponsors img {
+        max-width: 55px;            
+    }
+}
+
+
+ 
