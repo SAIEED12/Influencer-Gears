@@ -107,6 +107,77 @@ ul li:hover{
     margin-bottom: 100px;
 }
 
+.card-section h3{
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 50px;
+    color: #3A3A3A;
+    font-weight: 600;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 0.1fr);
+    gap: 20px;
+    justify-content: center;
+    /* border: 2px solid #E0E0E0; */
+    
+}
+
+.card{
+    border: 1px solid #E0E0E0;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    max-width: 329px;
+    max-height: 476px;
+    margin-bottom: 50px;
+}
+
+.desc{
+    color: #787885;
+    font-weight: bold;
+    font-size: 0.875rem;
+        margin-bottom: 5px;
+}
+
+.price{
+    font-size: 1.25rem;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.card svg{
+    gap: 14px;
+}
+
+.card h4{
+    font-size: 1.75rem;
+    margin-bottom: 6px;
+}
+.rating{
+    display: flex;
+}
+
+.rating p{
+    font-size: 0.875rem;
+    margin:1px;
+    font-weight: bold;
+    color: #5E6366;
+}
+.see{
+    display: flex;
+    align-items: center;
+    margin-left: 1385px;
+}
+
+.see a{
+    text-decoration: none;
+    color: #E02C6D;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
 /* responsive */
 @media (max-width: 576px) {
 
@@ -168,6 +239,21 @@ ul li:hover{
 
     .sponsors img {
         max-width: 55px;            
+    }
+
+    .card-container{
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 32px;
+    }
+
+    .card{
+        margin: 0 auto;
+    }
+
+    .see{
+        display: flex;
+        align-items: center;
+        margin-left: 280px;
     }
 }
 
