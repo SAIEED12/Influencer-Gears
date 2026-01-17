@@ -127,8 +127,6 @@ ul li:hover{
     grid-template-columns: repeat(3, 0.1fr);
     gap: 20px;
     justify-content: center;
-    /* border: 2px solid #E0E0E0; */
-    
 }
 
 .card{
@@ -140,13 +138,20 @@ ul li:hover{
     max-width: 329px;
     max-height: 476px;
     margin-bottom: 50px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
 }
 
 .desc{
     color: #787885;
     font-weight: bold;
     font-size: 0.875rem;
-        margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .price{
