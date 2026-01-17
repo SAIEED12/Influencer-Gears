@@ -271,7 +271,9 @@ ul li:hover{
     .hero-contents{
         max-width: 404px;
     }
-
+    .hero-btn:hover{
+        background-color: #0A0826;
+    }   
     .threedot{
         display: flex;
     }
@@ -357,7 +359,9 @@ ul li:hover{
         margin-bottom: 24px;
         text-align: center;
     }
-
+    .product-btn:hover{
+        background-color: #0A0826;
+    }
     .image img {
         max-width: 300px;
         height: auto;
